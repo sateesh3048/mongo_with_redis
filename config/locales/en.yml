@@ -1,0 +1,49 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  product_price: "$%{price}"
+  name: "Testing Name"
+  also_missing: "Yest this is also missed"
+  welcome: <b>Welcome</b>
+  hello_html: <b>Hello %{user_name} !</b>
+  title:
+    html: <b>Title</b>
+
+  user:
+    children:
+      zero: "no children"
+      one: "%{count} child"
+      other: "%{count} children"
+  activerecord:
+    errors:
+      messages:
+        blank: "It seems u have missed this field. Please fill {{attribute}}"
+        record_invalid: "Above mentioned record is not looking proper"
+        odd: "Must be odd"
+        even: "Must be Even"
+        bad_name: "Name is not there"
+  categories:
+    index:
+      title: "Welcome to categories"
+
+

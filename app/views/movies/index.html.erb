@@ -1,0 +1,29 @@
+<p>Movie Listing Page</p>
+  <%= form_tag movies_path, method: :get do %>
+    <p>
+      <%= text_field_tag :query, params[:query] %>
+      <%= submit_tag "Search" %>
+    </p>
+  <% end %>
+
+<table border="1px">
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Description</td>
+      <td>Language</td>
+      <td>Rating</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do  |movie| %>
+      <tr>
+        <td><%= movie.name %> </td>
+        <td><%= movie.description %></td>
+        <td><%#= movie.language %></td>
+        <td><%#= movie.rating%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= %>

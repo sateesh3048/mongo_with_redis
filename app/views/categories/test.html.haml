@@ -1,0 +1,11 @@
+/ %h1
+/   category Listing
+/ %ul#categories
+/   - @categories.each do |cat|
+/     %li
+/       %h5
+/         = cat["_id"]["$oid"]
+/       %h3
+/         = cat["name"]
+/       %p
+/         = cat["desc"]

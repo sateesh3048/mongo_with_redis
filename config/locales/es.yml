@@ -1,0 +1,6 @@
+es:
+  product_price: "%{price} €"
+  hello: "Ahoy World!"
+  time:
+    formats:
+      short: "around %H'ish"

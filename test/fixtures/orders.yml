@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  qty: 1
+  price: 1.5
+  orderd_date: 2016-08-22
+
+two:
+  qty: 1
+  price: 1.5
+  orderd_date: 2016-08-22

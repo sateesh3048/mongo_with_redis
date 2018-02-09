@@ -1,0 +1,50 @@
+%div{:style=> "margin-top:100px;"}
+%div Display Product Price
+%div
+  = t('product_price', price: 1000)
+%div Welcome Translation
+%div
+  = t(:welcome)
+%div Hello Html Translation
+%div
+  = t(:hello_html, user_name: "Sateesh")
+%div Title Html Translation
+%div
+  = t("title.html")
+
+
+%h4
+  = t(:record_invalid, scope: [:activerecord, :errors, :messages])
+%h4
+  = t 'activerecord.errors.messages.record_invalid'
+%h4
+  = t :record_invalid, scope: 'activerecord.errors.messages'
+%h4
+  = t :not_given, default: "Translation is missing tfor this one"
+%h4
+  = t :missing, default: [:also_missing, "Sorry Not Given"]
+%h5
+  = t [:even, :odd], scope: "activerecord.errors.messages"
+
+%div Numbber Format
+%div 
+  %h1=I18n.t(:hello)
+%h2
+  =l Time.now, format: :short
+%h2
+  = t(".title")
+
+#print_nuber Details 
+#print_percentage Percentage Details
+#humanize_message Humanize Format
+#current_date
+#testing_name
+#testing_hello
+#children
+  =t("user.children", { count: 0 })
+  =t("user.children", { count: 1 })
+  =t("user.children", { count: 10 })
+#zero_children
+#one_children
+#more_children
+#age_details

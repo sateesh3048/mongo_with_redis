@@ -1,0 +1,12 @@
+<%= form_for @user do |user_form| %>
+
+  <p>
+    <div>Upload Image:</div>
+    <div><%= user_form.file_field :image %></div>
+  </p>
+
+  <p>
+    <%= user_form.submit "Upload Photo" %>
+  </p>
+
+<% end %>
